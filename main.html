@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Image Editor </title>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Courgette|Itim" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header text-center">
+            <h1> Image Editor </h1>
+        </div>
+
+
+
+
+        <div class="image-url text-center">
+            <form class="url" id="url-form">
+                <input class="url-box" type="text" placeholder="Image URL" required />
+                <button id="form-button" class="btn btn-primary" type="submit"><a class="fa fa-check"></a> Submit</button>
+            </form>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row editing-section">
+                <div class="input-parameters col-xs-3 col-lg-3 col-md-3">
+                    <label id="br" for="brightness"> Brightness: 100</label>
+                    <input id="brightness" type="range" min=0 max=200 value=100 />
+
+                    <label id="hu" for="hue"> Hue: 0</label>
+                    <input id="hue" type="range" min=0 max=360 value=0 />
+
+                    <label id="se" for="sepia"> Sepia: 0</label>
+                    <input id="sepia" type="range" min=0 max=100 value=0 />
+
+                    <label id="sa" for="saturation"> Saturation: 100</label>
+                    <input id="saturation" type="range" min=0 max=500 value=100 />
+                </div>
+
+
+
+                <div class="image-holder col-xs-6 col-lg-6 col-md-6 well ">
+                    <img id="image" src="http://www.space.ca/wp-content/uploads/2016/09/deadpool.jpg" />
+                </div>
+
+
+
+                <div class="input-parameters col-xs-3 col-lg-3 col-md-3">
+                    <label id="in" for="invert"> Invert: 0</label>
+                    <input id="invert" type="range" min=0 max=100 value=0 />
+
+                    <label id="op" for="opacity"> Opacity: 100</label>
+                    <input id="opacity" type="range" min=0 max=100 value=100 />
+
+                    <label id="gr" for="greyscale"> Greyscale: 0</label>
+                    <input id="greyscale" type="range" min=0 max=100 value=0 />
+
+                    <label id="co" for="contrast"> Contrast: 100</label>
+                    <input id="contrast" type="range" min=0 max=200 value=100 />
+                </div>
+            </div>
+        </div>
+
+        <div class="reset">
+            <button class="btn reset-button"> RESET </button>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
