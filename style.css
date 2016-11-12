@@ -1,11 +1,12 @@
 body{
     width: 100%;
-    background: linear-gradient(to right, red, yellow);
+    background: linear-gradient(to right, #000000, #394354);
 }
 
 h1{
     font-family: Courgette;
     font-size: 50px;
+    color: white;
 }
 
 
@@ -65,7 +66,7 @@ img{
 label{
     font-family: Open Sans;
     font-size: 20px;
-    color: black;
+    color: white;
 }
 
 .input-parameters{
