@@ -51,4 +51,50 @@ $(".reset-button").on("click", function(){
     setTimeout(function() {
 		editImage();
 	},0);
-})
+});
+
+
+$(".hue-button").on("click", function(){
+    if($("#image").hasClass("hue")){
+        $("#image").removeClass("hue");
+        $(".hue-button").css("background-color", "#ecff60");
+    }
+    else{
+        $("#image").addClass("hue");
+        $(".hue-button").css("background-color", "#42f4e5");
+    }
+});
+
+$(".sepia-button").on("click", function(){
+    if($("#image").hasClass("sepia")){
+        $("#image").removeClass("sepia");
+        $(".sepia-button").css("background-color", "#ecff60");
+    }
+    else{
+        $("#image").addClass("sepia");
+        $(".sepia-button").css("background-color", "#42f4e5");
+    }
+});
+
+$(".grayscale-button").on("click", function(){
+    if($("#image").hasClass("grayscale")){
+        $("#image").removeClass("grayscale");
+        $(".grayscale-button").css("background-color", "#ecff60");
+    }
+    else{
+        $("#image").addClass("grayscale");
+        $(".grayscale-button").css("background-color", "#42f4e5");
+    }
+});
+
+
+$(".blur-button").on("click", function(){
+    if($("#image").hasClass("blur")){
+        $("#image").removeClass("blur");
+        $(".blur-button").css("background-color", "#ecff60");
+    }
+    else{
+        $("#image").addClass("blur");
+        $(".blur-button").css("background-color", "#42f4e5");
+    }
+});
