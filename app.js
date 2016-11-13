@@ -5,6 +5,19 @@ $("#url-form").on("submit", function(e){
     e.preventDefault();
 });
 
+// Function to upload image from local desktop.
+function readURL(input){
+    if(input.files && input.files[0]){
+        var reader = new FileReader();
+
+        reader.onload = function(e){
+            $("#image").attr('src', e.target.result);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
 
 // Changing image properties using Css filters
 
