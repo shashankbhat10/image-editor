@@ -8,3 +8,6 @@ Added animation for hue, sepia, grayscale and blur.
 
 # Note
 Allow unsafe scripts to load so as to load javascript file for effects.
+
+# To-Do
+Add Functionality to add image from local computer and save functionality.
