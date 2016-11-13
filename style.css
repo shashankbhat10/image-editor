@@ -51,6 +51,21 @@ img{
     width: 100px;
 }
 
+.btn-file{
+    font-family: Open Sans;
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file]{
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: alpha(opacity=0);
+    opacity: 0;
+
+}
+
 /* Changing Icon Color */
 .fa{
     color:white;
