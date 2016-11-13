@@ -1,6 +1,6 @@
 # Image-Editor
 An image Editor using CSS3 filters.
-Add link of any image and edit its features.
+Add link of any image and edit its features. <br/>
 <a href="https://shashankbhat10.github.io/image-editor/"> DEMO </a>
 
 # Edit
